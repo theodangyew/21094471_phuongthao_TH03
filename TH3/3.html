@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: pink;
+      color: black;
+      font-size: 4em;
+    }
+    .clock-box {
+      background: white;
+      border: 5px solid black;
+      padding: 20px;
+      border-radius: 10px;  
+    }
+  </style>
+</head>
+<body>
+  <div class="clock-box">
+    <div id="c"></div>
+  </div>
+  <script>setInterval(()=>c.innerText=new Date().toLocaleTimeString(),1e3)</script>
+</body>
+</html>
